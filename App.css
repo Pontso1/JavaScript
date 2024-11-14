@@ -1,0 +1,377 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2C6B47;
+  margin-top: 30px;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header nav a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav a:hover {
+  color: #388E3C;
+  transform: translateY(-2px);
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #388E3C;
+  transform: scale(1.05);
+}
+
+/* Login Form Styling */
+#login-form {
+  max-width: 450px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#login-form h2 {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#login-form input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+#login-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+  background-color: #388E3C;
+}
+
+#login-form .error {
+  color: #f44336;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+#login-form .switch {
+  margin-top: 20px;
+  color: #388E3C;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#login-form .switch:hover {
+  color: #4CAF50;
+}
+
+/* Dashboard */
+#dashboard {
+  padding: 30px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#dashboard h2 {
+  font-size: 2.5rem;
+  color: #2C6B47;
+  margin-bottom: 20px;
+}
+
+#product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#product-list li {
+  padding: 15px;
+  margin-bottom: 12px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#product-list li span {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+#dashboard a {
+  color: #4CAF50;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+#dashboard a:hover {
+  color: #388E3C;
+}
+
+#dashboard .btn {
+  background-color: #FF9800;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#dashboard .btn:hover {
+  background-color: #FF5722;
+}
+
+/* Product Management */
+#product-management {
+  padding: 30px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#product-management form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+#product-management form input {
+  padding: 12px;
+  font-size: 1rem;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+#product-management form input:focus {
+  border-color: #4CAF50;
+}
+
+#product-management form button {
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#product-management form button:hover {
+  background-color: #388E3C;
+}
+
+#product-management ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#product-management ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#product-management ul li button {
+  background-color: #FF5722;
+  color: white;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#product-management ul li button:hover {
+  background-color: #E64A19;
+}
+
+/* User Management */
+#user-management {
+  padding: 30px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#user-management form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+#user-management form input {
+  padding: 12px;
+  font-size: 1rem;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+#user-management form input:focus {
+  border-color: #4CAF50;
+}
+
+#user-management form button {
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#user-management form button:hover {
+  background-color: #388E3C;
+}
+
+#user-management ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#user-management ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#user-management ul li button {
+  background-color: #FF5722;
+  color: white;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#user-management ul li button:hover {
+  background-color: #E64A19;
+}
+
+/* Rotating Images */
+.rotating-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust the height based on your layout */
+  overflow: hidden;
+}
+
+.rotating-image {
+  animation: rotate 10s infinite linear;
+  width: 300px; /* Set the width for the images */
+  height: 300px; /* Set the height for the images */
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(90deg);
+  }
+  50% {
+      transform: rotate(180deg);
+  }
+  75% {
+      transform: rotate(270deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.rotating-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
